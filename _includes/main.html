@@ -1,3 +1,48 @@
-<main id="main">	
-	{{ content }}
-</main>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-2 d-none d-md-block bg-light sidebar">
+			<aside class="sidebar-sticky">
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+					<span>Programming Languages</span>
+				</h6>
+				<nav class="nav flex-column">
+					<a class="nav-link" href="#">C ( compile - functional )</a>
+					<a class="nav-link" href="#">C++ ( compile - OOP )</a>
+					<a class="nav-link" href="#">Golang vs Scalar( compile - functional ) </a>
+					<a class="nav-link" href="#">C# vs Java( interpreter - OOP )</a>
+					<a class="nav-link" href="#">PHP vs Ruby vs Python( interpreter )</a>
+					<a class="nav-link" href="#">NodeJS & Javascript & Typescript( interpreter )</a>
+				</nav>
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+					<span>Sharing Stacks</span>
+				</h6>
+				<nav class="nav flex-column">
+					<a class="nav-link" href="#">LAMP - LEMP( LINUX + APACHE/NGINX + MYSQL + PHP )</a>
+					<a class="nav-link" href="#">MEAN(MongoDB + Express + AngularJS(ReactJS if you want) + NodeJS) </a>
+					<a class="nav-link" href="#">ROR(Ruby on Rails with any databases you want)</a>
+					<a class="nav-link" href="#">Java EE && Java Spring</a>
+					<a class="nav-link" href="#">.NET CORE && .NET Framework</a>
+				</nav>
+				<h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+					<span>Databases</span>
+				</h6>
+				<nav class="nav flex-column">
+					<a class="nav-link" href="#">Text File, Binary File, JSON, XML</a>
+					<a class="nav-link" href="#">SQLite</a>
+					<a class="nav-link" href="#">Redis</a>
+					<a class="nav-link" href="#">MongoDB</a>
+					<a class="nav-link" href="#">MYSQL</a>
+					<a class="nav-link" href="#">PostgreSQL</a>
+					<a class="nav-link" href="#">GraphQL</a>
+					<a class="nav-link" href="#">MSSQL</a>
+				</nav>
+			</aside>
+		</div>
+		<main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-4">
+			<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+				<h1 class="h2">{{ page.title }}</h1>
+			</div>
+			{{ content }}
+		</main>
+	</div>
+</div>

@@ -4,32 +4,59 @@
 {% assign site_logo = site.logo | relative_url %}
 {% endif %}
 
-<nav class="navbar navbar-expand-md navbar-light bg-light">
-	<a class="navbar-brand" href="#"><img src="{{ site_logo }}" alt="{{ site_logo }}" /></a>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">BRAND</a>
 	<button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
 	 aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
 		<span class="navbar-toggler-icon"></span>
 	</button>
 	<div class="collapse navbar-collapse" id="collapsibleNavId">
+		<form class="form-inline my-2 my-lg-0">
+			<input class="form-control mr-sm-2" type="text" placeholder="Search" />
+		</form>
 		<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
+				<a class="nav-link" href="{{ '' | relative_url }}">Lời nói đầu <span class="sr-only">(current)</span></a>
 			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
-				 aria-expanded="false">Dropdown</a>
+				 aria-expanded="false">Web developer</a>
 				<div class="dropdown-menu" aria-labelledby="dropdownId">
-					<a class="dropdown-item" href="#">Action 1</a>
-					<a class="dropdown-item" href="#">Action 2</a>
+					<a class="dropdown-item" href="#">Front-end</a>
+					<a class="dropdown-item" href="#">Backen-end</a>
+					<a class="dropdown-item" href="#">DevOps</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">Mobile developer</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownId">
+					<a class="dropdown-item" href="#">Android Dev</a>
+					<a class="dropdown-item" href="#">IOS Dev</a>
+					<a class="dropdown-item" href="#">Unity</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">Software developer</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownId">
+					<a class="dropdown-item" href="#">Window Applcation</a>
+					<a class="dropdown-item" href="#">C++ && Qt</a>
+					<a class="dropdown-item" href="#">Java Application</a>
+				</div>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true"
+				 aria-expanded="false">MMO</a>
+				<div class="dropdown-menu" aria-labelledby="dropdownId">
+					<a class="dropdown-item" href="#">Wordpress</a>
+					<a class="dropdown-item" href="#">Landing Page</a>
+					<a class="dropdown-item" href="#">SEO</a>
+					<a class="dropdown-item" href="#">SEM</a>
+					<a class="dropdown-item" href="#">Facebook Ads</a>
+					<a class="dropdown-item" href="#">Youtube</a>
 				</div>
 			</li>
 		</ul>
-		<form class="form-inline my-2 my-lg-0">
-			<input class="form-control mr-sm-2" type="text" placeholder="Search">
-			<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-		</form>
 	</div>
 </nav>
