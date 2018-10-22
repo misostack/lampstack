@@ -1,0 +1,33 @@
+{
+  "name": "digimark2018",
+  "version": "1.0.0",
+  "description": "digimark 2018 jekyll theme",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "set NODE_ENV=dev&&webpack -w --color -p"
+  },
+  "keywords": [
+    "responsive",
+    "seo",
+    "digital",
+    "marketing"
+  ],
+  "author": "misostack",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "babel-loader": "^8.0.2",
+    "imports-loader": "^0.8.0",
+    "jquery": "^3.3.1",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "bxslider": "^4.2.14",
+    "popper.js": "^1.14.4",
+    "wow.js": "^1.2.2"
+  }
+}

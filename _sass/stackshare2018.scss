@@ -1,0 +1,18 @@
+/*!
+ * Basically Basic Jekyll Theme 1.4.1
+ * Copyright 2017-2018 Michael Rose - mademistakes | @mmistakes
+ * Free for personal and commercial use under the MIT license
+ * https://github.com/mmistakes/jekyll-theme-basically-basic/blob/master/LICENSE.md
+*/
+
+/* reset css or css framework */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "stackshare2018/variables";
+@import "stackshare2018/mixins";
+@import "stackshare2018/base";
+@import "stackshare2018/layout";
+
+/* modules : sit inside layout components */
+
+@import "stackshare2018/modules/header";
+@import "stackshare2018/modules/footer";
